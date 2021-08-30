@@ -53,4 +53,11 @@ public interface TimeBookingService {
      * @param timeBookDTO
      */
     void bookTime(TimeBookDTO timeBookDTO);
+    
+    /**
+     * Get the timeBookings by personalNumber.
+     *
+     * @return the list of entities.
+     */
+    List<TimeBooking> findByPersonalNumber(String personalNumber);
 }
