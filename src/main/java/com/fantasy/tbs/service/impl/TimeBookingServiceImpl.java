@@ -80,4 +80,10 @@ public class TimeBookingServiceImpl implements TimeBookingService {
     public void bookTime(TimeBookDTO timeBookDTO) {
         timeBookingRepository.save(timeBookMapper.toTimeBooking(timeBookDTO));
     }
+    
+        @Override
+    public List<TimeBooking> findByPersonalNumber(String personalNumber) {
+        // TODO find the timeBookings by personalNumber
+        return null;
+    }
 }
